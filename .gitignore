@@ -1,0 +1,5 @@
+
+*.txt
+__pycache__/
+output_all_b_o_sim_cls*/
+*log*/
