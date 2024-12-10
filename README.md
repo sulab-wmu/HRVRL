@@ -1,14 +1,14 @@
 
 
-<h1>HRVRL： Efficient and Interpretable Retinal Disease Diagnosis with Hierarchical Representation learning</h1> <br/>
+<h1>HRVRL： Efficient and Interpretable Retinal Disease Diagnosis with Hierarchical Representation learning</h1>
 
-<h3>Framework
+- <h3> Framework </h3>
 
 <div style="text-align: center">
   <img src='fig/F1.png'/>
 </div>
 
-<h3> Environment Requirements</h3>
+- <h3> Environment Requirements</h3>
 
 ```shell
 conda create -n hrvrl python=3.10 -y
