@@ -1,6 +1,6 @@
 
 
-<h1>HRVRL： Efficient and Interpretable Retinal Disease Diagnosis with Hierarchical Representation learning</h1>
+<h1>HRVRL： An Efficient and Interpretable Foundation Model for Retinal Image Analysis in Disease Diagnosis</h1>
 
 - <h3> Framework </h3>
 
@@ -23,4 +23,10 @@ pip install torch==1.13.1 torchvision torchaudio --extra-index-url https://downl
 > AttributeError: module 'tensorflow' has no attribute 'GraphKeys'
 > `vim /home/xxx/.conda/envs/xxx/lib/python3.10/site-packages/tensorlayer/layers.py`
 > `import tensorflow as tf ---> import tensorflow.compat.v1 as tf`
+<<<<<<< Updated upstream
 > `pip install pycm==4.1`
+=======
+>
+> `pip install pycm==4.1 ` 
+
+>>>>>>> Stashed changes
