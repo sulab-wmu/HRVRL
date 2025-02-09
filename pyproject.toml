@@ -23,6 +23,7 @@ pillow = "^10.2.0"
 tensorlayer = "1.5.0"
 tensorboardx = "2.6"
 timm = "^0.9.16"
+grad-cam = "^1.5.3"
 pycm = "^4.1"
 
 

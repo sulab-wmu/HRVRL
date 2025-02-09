@@ -12,11 +12,11 @@ dataset_name = 'DRIVE'  # DRIVE
 dataset = dataset_name
 max_step = 30000  # 30000 for ukbb
 if dataset_name == 'DRIVE':
-    patch_size_list = [64, 128, 256]
+    patch_size_list = [64, 128, 512]
 elif dataset_name == 'LES':
-    patch_size_list = [96, 384, 256]
+    patch_size_list = [96, 384, 512]
 elif dataset_name == 'hrf':
-    patch_size_list = [64, 384, 256]
+    patch_size_list = [64, 384, 512]
 
 patch_size = patch_size_list[2]
 batch_size = 8  # default: 4
@@ -60,16 +60,16 @@ input_nc_D = input_nc + 3
 use_centerness = True  # default: True
 lambda_centerness = 1
 center_loss_type = 'centerness'
-centerness_map_size = [128, 128]
+centerness_map_size = [patch_size//2,patch_size//2]
 
 # pretrained model
 use_pretrained_G = True
-use_pretrained_D = True
+use_pretrained_D = False
 # model_path_pretrained_G = './log/patch_pretrain'
 
-model_path_pretrained_G = r'./log/2024_08_07_01_06_36'
+model_path_pretrained_G = r'./pretrain/AV/log/'
 
-model_step_pretrained_G = 12000
+model_step_pretrained_G = 'pretrain'
 
 # path for dataset
 stride_height = 150
@@ -83,7 +83,7 @@ model_step = 0
 use_CAM = False
 
 # use resize
-use_resize = False
+use_resize = True
 resize_w_h = (2048, 256)
 
 # use av_cross

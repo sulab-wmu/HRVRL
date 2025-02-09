@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 from functools import partial
-from torchvision.models import convnext_tiny,ConvNeXt_Tiny_Weights
+from torchvision.models import convnext_tiny
 import torch.nn.functional as F
 class MultiAV_RIP(nn.Module):
     def __init__(self,
@@ -15,8 +15,7 @@ class MultiAV_RIP(nn.Module):
         base_model = convnext_tiny
         norm_layer = partial(LayerNorm2d, eps=1e-6)
         if pretrain:
-            #layers = list(base_model(weights=ConvNeXt_Tiny_Weights.IMAGENET1K_V1,stochastic_depth_prob=drop_path).features)[:cut]
-            #layers = list(base_model(stochastic_depth_prob=0.8).features)[:cut]
+            
             layers = list(base_model(stochastic_depth_prob=drop_path).features)[:cut]
         else:
             layers = list(base_model(stochastic_depth_prob=drop_path).features)[:cut]
