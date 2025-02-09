@@ -11,6 +11,8 @@
 - <h3> Environment Requirements</h3>
 
 ```shell
+git clone https://github.com/sulab-wmu/HRVRL.git
+cd HRVRL
 conda create -n hrvrl python=3.10 -y
 conda activate hrvrl
 pip install poetry 
